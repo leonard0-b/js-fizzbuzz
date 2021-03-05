@@ -10,6 +10,7 @@ for (var i = 1; i <= 100; i++) {
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
     document.getElementById('lista').innerHTML += "<li>" + "Fizz Buzz" + "</li>"
+
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
