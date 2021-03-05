@@ -14,7 +14,7 @@ body {
   height: 100vh;
   width: 100vw;
   align-items: center;
-  background-image: linear-gradient(to right bottom, #eef765, #c4ef6d, #9be579, #74da85, #4bcd90);
+  background-image: linear-gradient(to right bottom, #f1737f, #d46b8c, #b16691, #8e628d, #6d5c80);
 }
 
 .container {
@@ -23,8 +23,8 @@ body {
   flex-wrap: wrap;
   border-radius: 10px;
   padding: 15px;
-  background-color: #26304F;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-image: linear-gradient(to right bottom, #6d5c7e, #8d628b, #b16690, #d46a8c, #f2727f);
 }
 
 
@@ -33,12 +33,14 @@ body {
   margin: 5px;
   border-radius: 10px;
   padding: 15px;
-  background-image: linear-gradient(to left top, #26304f, #2b3553, #303a57, #363f5b, #3b445f);
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-image: linear-gradient(to right bottom, #f8b195, #ffc0c2, #fed5e5, #f9ebf9, #ffffff);
 }
 
+
 li {
-  color: #fff;
+  color: #166985;
+  text-shadow: 1px 1px 2px #000;
 }
 
 .card
