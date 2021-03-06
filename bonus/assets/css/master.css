@@ -44,7 +44,7 @@ li {
   text-shadow: 1px 1px 2px #000;
 }
 
-button {
+.button {
   outline: none;
   transition: transform 150ms;
   cursor: pointer;
@@ -56,7 +56,7 @@ button {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
-.button {
+.button-container {
   position: relative;
   margin-bottom: 50px;
 }
@@ -72,10 +72,10 @@ button {
   border: 2px solid #6d5c7e;
 }
 
-button:hover {
+.button:hover {
   transform: translate(0, 0.08em);
 }
 
-button:active {
+.button:active {
   transform: translate(0em, 0.25em);
 }
