@@ -209,17 +209,17 @@ for (var i = 81; i <= 90; i++) {
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista90').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista90').innerHTML += "<li class=\"novanta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista90').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista90').innerHTML += "<li class=\"novanta\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista90').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista90').innerHTML += "<li class=\"novanta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -228,6 +228,18 @@ for (var i = 81; i <= 90; i++) {
     }
 }
 
+// seleziono la classe bottone da html 🐱‍👤
+var bottone90 = document.querySelectorAll(".button");
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz90 = document.getElementsByClassName("novanta");
+// creo un evento al click 🐱‍👤
+bottone90[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz90[i].style.color = "red";
+  }
+});
+
 // stampa i numeri da 81 a 90 🐱‍👤
 for (var i = 91; i <= 100; i++) {
 
@@ -235,16 +247,15 @@ for (var i = 91; i <= 100; i++) {
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
     document.getElementById('lista100').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
-
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista100').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista100').innerHTML += "<li class=\"cento\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista100').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista100').innerHTML += "<li class=\"cento\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -252,3 +263,15 @@ for (var i = 91; i <= 100; i++) {
       document.getElementById('lista100').innerHTML += "<li>" + i + "</li>"
     }
 }
+
+// seleziono la classe bottone da html 🐱‍👤
+var bottone00 = document.querySelectorAll(".button");
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz = document.getElementsByClassName("cento");
+// creo un evento al click 🐱‍👤
+bottone00[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz[i].style.color = "yellow";
+  }
+});
