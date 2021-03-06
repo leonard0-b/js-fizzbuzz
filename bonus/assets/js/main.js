@@ -9,17 +9,17 @@ for (var i = 1; i <= 10; i++) {
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista10').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista10').innerHTML += "<li class=\"dieci\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista10').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista10').innerHTML += "<li class=\"dieci\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista10').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista10').innerHTML += "<li class=\"dieci\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -28,23 +28,35 @@ for (var i = 1; i <= 10; i++) {
     }
 }
 
+// seleziono la classe bottone da html 🐱‍👤
+var bottone = document.querySelectorAll(".button");
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz10 = document.getElementsByClassName("dieci");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz10[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 11 a 20 🐱‍👤
 for (var i = 11; i <= 20; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista20').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista20').innerHTML += "<li class=\"venti\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista20').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista20').innerHTML += "<li class=\"venti\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista20').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista20').innerHTML += "<li class=\"venti\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -53,23 +65,33 @@ for (var i = 11; i <= 20; i++) {
     }
 }
 
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz20 = document.getElementsByClassName("venti");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz20[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 21 a 20 🐱‍👤
 for (var i = 21; i <= 30; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista30').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista30').innerHTML += "<li class=\"trenta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista30').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista30').innerHTML += "<li class=\"trenta\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista30').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista30').innerHTML += "<li class=\"trenta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -78,23 +100,33 @@ for (var i = 21; i <= 30; i++) {
     }
 }
 
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz30 = document.getElementsByClassName("trenta");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz30[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 31 a 40 🐱‍👤
 for (var i = 31; i <= 40; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista40').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista40').innerHTML += "<li class=\"quaranta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista40').innerHTML += "<li>" + "Fizz" + " " +"⭐" + "</li>"
+      document.getElementById('lista40').innerHTML += "<li class=\"quaranta\">" + "Fizz" + " " +"⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista40').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista40').innerHTML += "<li class=\"quaranta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -103,23 +135,33 @@ for (var i = 31; i <= 40; i++) {
     }
 }
 
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz40 = document.getElementsByClassName("quaranta");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz40[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 41 a 50 🐱‍👤
 for (var i = 41; i <= 50; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista50').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista50').innerHTML += "<li class=\"cinquanta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista50').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista50').innerHTML += "<li class=\"cinquanta\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista50').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista50').innerHTML += "<li class=\"cinquanta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -128,23 +170,33 @@ for (var i = 41; i <= 50; i++) {
     }
 }
 
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz50 = document.getElementsByClassName("cinquanta");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz50[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 51 a 50 🐱‍👤
 for (var i = 51; i <= 60; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista60').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista60').innerHTML += "<li class=\"sessanta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista60').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista60').innerHTML += "<li class=\"sessanta\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista60').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista60').innerHTML += "<li class=\"sessanta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -153,23 +205,33 @@ for (var i = 51; i <= 60; i++) {
     }
 }
 
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz60 = document.getElementsByClassName("sessanta");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz60[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 61 a 70 🐱‍👤
 for (var i = 61; i <= 70; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista70').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista70').innerHTML += "<li class=\"settanta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista70').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista70').innerHTML += "<li class=\"settanta\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista70').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista70').innerHTML += "<li class=\"settanta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -178,23 +240,33 @@ for (var i = 61; i <= 70; i++) {
     }
 }
 
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz70 = document.getElementsByClassName("settanta");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz70[i].style.color = "#6d5c7e";
+  }
+});
+
 // stampa i numeri da 71 a 80 🐱‍👤
 for (var i = 71; i <= 80; i++) {
 
 // se il numero è sia multiplo di 3 che di 5 allora stampa Fizz Buzz 🐱‍👤
   if ((i%3 == 0) && (i%5 == 0)) {
     console.log("Fizz Buzz");
-    document.getElementById('lista80').innerHTML += "<li>" + "Fizz Buzz" + " " + "⚡" + "</li>"
+    document.getElementById('lista80').innerHTML += "<li class=\"ottanta\">" + "Fizz Buzz" + " " + "⚡" + "</li>"
 
     // altrimenti se è solo multiplo di 3 stampa Fizz 🐱‍👤
     } else if (i%3 == 0) {
       console.log("Fizz");
-      document.getElementById('lista80').innerHTML += "<li>" + "Fizz" + " " + "⭐" + "</li>"
+      document.getElementById('lista80').innerHTML += "<li class=\"ottanta\">" + "Fizz" + " " + "⭐" + "</li>"
 
     // altrimenti se è solo multiplo di 5 stampa Buzz 🐱‍👤
     } else if (i%5 == 0) {
       console.log("Buzz");
-      document.getElementById('lista80').innerHTML += "<li>" + "Buzz" + " " + "🌟" + "</li>"
+      document.getElementById('lista80').innerHTML += "<li class=\"ottanta\">" + "Buzz" + " " + "🌟" + "</li>"
 
     // altrimenti stampa il numero 🐱‍👤
     } else {
@@ -202,6 +274,18 @@ for (var i = 71; i <= 80; i++) {
       document.getElementById('lista80').innerHTML += "<li>" + i + "</li>"
     }
 }
+
+// creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
+var fizz80 = document.getElementsByClassName("ottanta");
+// creo un evento al click 🐱‍👤
+bottone[0].addEventListener("click", function(e) {
+  // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
+  for (var i = 0; i < fizz.length; i++) {
+    fizz80[i].style.color = "#6d5c7e";
+  }
+});
+
+
 
 // stampa i numeri da 81 a 90 🐱‍👤
 for (var i = 81; i <= 90; i++) {
@@ -228,15 +312,13 @@ for (var i = 81; i <= 90; i++) {
     }
 }
 
-// seleziono la classe bottone da html 🐱‍👤
-var bottone90 = document.querySelectorAll(".button");
 // creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
 var fizz90 = document.getElementsByClassName("novanta");
 // creo un evento al click 🐱‍👤
-bottone90[0].addEventListener("click", function(e) {
+bottone[0].addEventListener("click", function(e) {
   // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
   for (var i = 0; i < fizz.length; i++) {
-    fizz90[i].style.color = "red";
+    fizz90[i].style.color = "#6d5c7e";
   }
 });
 
@@ -264,14 +346,12 @@ for (var i = 91; i <= 100; i++) {
     }
 }
 
-// seleziono la classe bottone da html 🐱‍👤
-var bottone00 = document.querySelectorAll(".button");
 // creo variabile che racchiuda gli li con classe cento diventando un array 🐱‍👤
 var fizz = document.getElementsByClassName("cento");
 // creo un evento al click 🐱‍👤
-bottone00[0].addEventListener("click", function(e) {
+bottone[0].addEventListener("click", function(e) {
   // ciclo per cambiare a ogni elemento dell'array il colore 🐱‍👤
   for (var i = 0; i < fizz.length; i++) {
-    fizz[i].style.color = "yellow";
+    fizz[i].style.color = "#6d5c7e";
   }
 });

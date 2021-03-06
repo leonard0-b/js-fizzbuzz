@@ -40,14 +40,15 @@ body {
 
 
 li {
-  text-shadow: 1px 1px 2px #000;
+  text-shadow: 3px 3px 20px #ff99cc, -2px 1px 30px #ff99cc;
 }
 
 ul {
-  color: #166985;
+  color: #fff;
 }
 
 .button {
+  color: #b16690;
   outline: none;
   transition: transform 150ms;
   cursor: pointer;
