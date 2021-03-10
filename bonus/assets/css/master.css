@@ -83,3 +83,7 @@ ul {
 .button:active {
   transform: translate(0em, 0.25em);
 }
+
+.active {
+  color: #6d5c7e;
+}
